@@ -1,0 +1,48 @@
+
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script src="prefixfree.js"></script>
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <div id="outside">
+    <p id="outside-title">
+      Are you single?
+    </p>
+    <img id="outside-pic" src="cat.jpg">
+    <p>
+      <button onclick="open_card()">No</button>
+    </p>
+  </div>
+
+  <div id="inside" style="display:none;"> <!-- hidden initially -->
+    <p id="inside-title">
+      Will you meet me on Wednesday? 10pm?
+    </p>
+    <img id="inside-pic" src="harsh.jpeg">
+    <p id="message">
+      I'd be honoured if I get to spend the day with the most beautiful boy I've ever seen!
+    </p>
+    <p>
+      <button onclick="say_yes()">Yes</button>
+    </p>
+  </div>
+
+  <script>
+    function open_card() {
+      document.getElementById('outside').style.display = 'none';
+      document.getElementById('inside').style.display = 'block';
+    }
+
+    function say_yes() {
+      alert("Yay! Can't wait to see you! ❤️");
+    }
+  </script>
+
+</body>
+</html>
+
+
